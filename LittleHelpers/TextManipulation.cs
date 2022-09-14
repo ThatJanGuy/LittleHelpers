@@ -38,7 +38,7 @@
         // Returns: Nothing 
         public static void MakeHeading(string heading)
         {
-            MakeHeading(heading, '-');
+            MakeHeading(heading, '-'); 
         }
 
         public static void MakeHeading(string heading, char lineChar)
