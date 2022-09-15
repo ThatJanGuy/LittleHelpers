@@ -1,6 +1,6 @@
 ﻿namespace LittleHelpers
 {
-    public static class GetData
+    public static class GetInput
     {
         // GetString
         // ---------
