@@ -284,7 +284,7 @@
             {
                 exit = false;
                 result = value;
-                return value;
+                return result;
             }
         }
     }
