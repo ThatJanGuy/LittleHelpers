@@ -17,7 +17,7 @@
 
         public static string? GetString(out bool exit, string exitTerm)
         {
-            string? input = Console.ReadLine();
+            string? input = Console.ReadLine() ?? "";
 
             if (exitTerm.Trim().Split(' ').Length > 1)
             {
@@ -154,12 +154,12 @@
         //          A boolean to the out variable.
         public static decimal? GetDecimal(out bool exit)
         {
-            return GetInt(out exit, "exit", 0, 0);
+            return GetDecimal(out exit, "exit", 0, 0);
         }
 
         public static decimal? GetDecimal(out bool exit, string exitTerm)
         {
-            return GetInt(out exit, exitTerm, 0, 0);
+            return GetDecimal(out exit, exitTerm, 0, 0);
         }
 
         public static decimal? GetDecimal(out bool exit, string exitTerm, decimal min, decimal max)
@@ -204,7 +204,7 @@
             {
                 TextManipulation.ColoredText(
                     "Only numbers are accepted!\n" +
-                    "Decimals with a decimal comma are ok.",
+                    "Decimals with a decimal comma are ok.\n",
                     ConsoleColor.Red
                     );
                 exit = false;
