@@ -49,7 +49,7 @@
 
 
         /// <summary>
-        /// Accepts string and returns it with the first letter of every word capitalised.
+        /// Accepts a string and returns it with the first letter of every word capitalised.
         /// </summary>
         /// <param name="input">The input string.</param>
         /// <returns></returns>
