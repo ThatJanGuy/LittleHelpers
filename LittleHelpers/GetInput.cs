@@ -1,4 +1,6 @@
-﻿namespace LittleHelpers
+﻿using System.Globalization;
+
+namespace LittleHelpers
 {
     public static class GetInput
     {
@@ -307,8 +309,8 @@
             else if (!DateTime.TryParse(input, out DateTime value))
             {
                 TextManipulation.ColoredText(
-                    "No legal input!\n" +
-                    "(Format: yyyy-mm-dd)\n",
+                    "Format error!\n" +
+                    $"(Expected format: {CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern})\n",
                     ConsoleColor.Red
                     );
                 exit = false;
